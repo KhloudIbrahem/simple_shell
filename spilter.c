@@ -7,7 +7,7 @@
 char **spilt(char *cmd)
 {
 	char *token;
-	size_t size = 64;
+	int size = 64;
 	char **tokens = malloc(sizeof(char *) * size);
 	int i = 0;
 
