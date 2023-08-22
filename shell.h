@@ -15,5 +15,9 @@
 char *commandline(void);
 int runcommand(char **args);
 char **spilt(char *cmd);
+int process(char **args);
+void commandinter(void);
+int exits(char **args);
+void commandnoninter(void);
 
 #endif
