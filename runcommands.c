@@ -7,14 +7,10 @@
 int runcommand(char **args)
 {
 	char *commands[] = {
-		"cd",
-		"env",
 		"exit"
 	};
 	int (*runcommands[])(char **) = {
-		&cd,
-		&env,
-		&exit
+		&exits
 	};
 	unsigned int i = 0;
 

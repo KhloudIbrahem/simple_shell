@@ -15,8 +15,8 @@ void commandnoninter(void)
 		args = spilt(cmd);
 		stat = runcommand(args);
 		free(cmd);
-		free(args);
 		if (stat >= 0)
-			exits(stat);
-	} while (stat == -1)
+			exits(args);
+		free(args);
+	} while (stat == -1);
 }
