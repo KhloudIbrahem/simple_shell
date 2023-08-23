@@ -26,7 +26,7 @@ int process(char **args)
 	{
 		do {
 			waitpid(pid, &status, 5);
-		} while(!WIFEXITED(status) && !WIFSIGNALED(status));
+		} while (!WIFEXITED(status) && !WIFSIGNALED(status));
 	}
 	return (-1);
 }

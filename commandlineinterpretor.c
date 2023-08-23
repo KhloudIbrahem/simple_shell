@@ -19,5 +19,5 @@ void commandinter(void)
 		if (status >= 0)
 			exits(args);
 		free(args);
-	} while(status == -1);
+	} while (status == -1);
 }
